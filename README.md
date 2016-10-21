@@ -1,1 +1,1 @@
-![](https://github.com/LineChen/ElasticLayout/GIF.gif)
+![](https://github.com/LineChen/ElasticLayout/blob/master/GIF.gif)
