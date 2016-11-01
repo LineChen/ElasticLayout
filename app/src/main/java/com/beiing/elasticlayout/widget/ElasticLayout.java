@@ -85,12 +85,7 @@ public class ElasticLayout extends LinearLayout{
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         mMaxScrollY = getMeasuredHeight() * 3 / 5;
 
-        if(scrollView.getMeasuredHeight() < MeasureSpec.getSize(heightMeasureSpec)){
-            //小于一屏幕高度
-            isOverScreen = false;
-        } else {
-            isOverScreen = true;
-        }
+        isOverScreen = !(scrollView.getMeasuredHeight() < MeasureSpec.getSize(heightMeasureSpec));
     }
 
     @Override
