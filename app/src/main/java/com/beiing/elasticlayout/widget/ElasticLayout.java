@@ -92,14 +92,12 @@ public class ElasticLayout extends LinearLayout{
     protected void onFinishInflate() {
         super.onFinishInflate();
         int childCount = getChildCount();
-        if(childCount == 0){
-            return;
-        } else if(childCount == 1){
+        if(childCount == 1){
             View child = getChildAt(0);
             removeView(child);
             scrollView.addView(child);
             addView(scrollView);
-        } else{
+        } else if(childCount > 1){
             throw new IllegalStateException("ElasticLayout can host only one direct child");
         }
     }
