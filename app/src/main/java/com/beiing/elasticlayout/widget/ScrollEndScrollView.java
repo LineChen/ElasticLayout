@@ -4,7 +4,11 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ScrollView;
-
+/**
+ * Created by chenliu on 2016/9/30.<br/>
+ * 描述：可以返回scrollview滑动到顶部和底部状态
+ * </br>
+ */
 public class ScrollEndScrollView extends ScrollView {
 
 

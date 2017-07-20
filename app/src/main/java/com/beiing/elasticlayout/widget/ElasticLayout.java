@@ -251,6 +251,7 @@ public class ElasticLayout extends LinearLayout{
     }
 
 
+
     //调用此方法滚动到目标位置
     public void smoothScrollTo(int fx, int fy) {
         int dx = fx - mScroller.getFinalX();
